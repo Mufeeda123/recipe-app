@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Recipe App</title>
+    <meta
+      name="description"
+      content="Discover easy and delicious recipes like Pasta, Biryani, Desserts, and more. Filter by category and search ingredients effortlessly."
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="app-header">
+      <div class="container header-row">
+        <h1>🍲 My Recipe App</h1>
+
+        <nav class="category-filter">
+          <button class="category-btn" data-category="All">All</button>
+          <button class="category-btn" data-category="Breakfast">
+            Breakfast
+          </button>
+          <button class="category-btn" data-category="Lunch">Lunch</button>
+          <button class="category-btn" data-category="Dinner">Dinner</button>
+          <button class="category-btn" data-category="Dessert">Dessert</button>
+        </nav>
+
+        <input type="text" id="search-box" placeholder="Search recipes..." />
+      </div>
+    </header>
+
+    <!-- Recipe cards will go here -->
+    <main id="main-content">
+      <div id="recipe-container">
+        <div class="recipe-card" data-category="Breakfast"></div>
+        <div class="recipe-card" data-category="Lunch"></div>
+        <div class="recipe-card" data-category="Dinner"></div>
+        <div class="recipe-card" data-category="Dessert"></div>
+      </div>
+    </main>
+
+    <div id="recipe-modal" class="modal">
+      <div class="modal-content">
+        <span class="close-btn">&times;</span>
+        <h2 id="modal-title"></h2>
+        <img id="modal-image" />
+        <h3>Ingredients</h3>
+        <ul id="modal-ingredients"></ul>
+        <h3>Steps</h3>
+        <p id="modal-steps"></p>
+      </div>
+    </div>
+
+    <footer class="app-footer">
+      <p>© 2025 🍲 My Recipe App. All rights reserved.</p>
+      <p>
+        Built with ❤️ by
+        <a href="https://github.com/Mufeeda123" target="_blank"
+          >Fathima Mufeeda K</a
+        >
+      </p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
